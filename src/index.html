@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <title>MdbTemplate</title>
+  <meta name="description" content="GK Business Process Services">
+  <meta name="author" content="Gia Khanh">
+  <meta name="keyword" content="GK, BPS, Gia Khanh, Golden Key, Business Process Services, GKBPS">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+
+  <noscript>
+      Please enable JavaScript to use system
+  </noscript>
+
+  <mdb-root></mdb-root>
+
+  <div class="spinning-preloader-container">
+    <div class="preloader-wrapper big active">
+      <div class="spinner-layer spinner-blue">
+        <div class="circle-clipper left">
+          <div class="circle"> </div>
+        </div> <div class="gap-patch">
+          <div class="circle"> </div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-red">
+        <div class="circle-clipper left">
+          <div class="circle"> </div>
+        </div> <div class="gap-patch">
+          <div class="circle"> </div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-yellow">
+        <div class="circle-clipper left">
+          <div class="circle"> </div>
+        </div> <div class="gap-patch">
+          <div class="circle"> </div>
+        </div>
+      </div>
+
+      <div class="spinner-layer spinner-green">
+        <div class="circle-clipper left">
+          <div class="circle"> </div>
+        </div> <div class="gap-patch">
+          <div class="circle"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+      if (typeof module==='object') {
+      window.module = module;
+      module = undefined;
+      }
+  </script>
+
+  <!-- Other scripts put here -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+
+  <script>
+      if (window.module) module = window.module;
+  </script>
+
+  <script>
+      if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/ngsw-worker.js').then(function(registration) {
+          console.log('Service Worker registered');
+      }).catch(function(err) {
+          console.log('Service Worker registration failed: ', err);
+      });
+      }
+  </script>
+</body>
+</html>
